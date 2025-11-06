@@ -4,6 +4,7 @@ aiogram==3.7.0
 # LangChain core and OpenAI integration
 langchain==0.2.1
 langchain-openai==0.1.7
+langchain-community
 
 # Vector Store (FAISS)
 faiss-cpu==1.8.0
