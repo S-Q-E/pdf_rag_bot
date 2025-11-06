@@ -1,0 +1,12 @@
+# Основные библиотеки
+aiogram==3.7.0
+langchain==0.2.1
+langchain-openai==0.1.7
+langchain-chroma==0.1.1
+llama-parse==0.1.4
+python-dotenv==1.0.1
+
+# Дополнительные зависимости
+nest-asyncio==1.6.0
+markdown-it-py==3.0.0
+lxml==5.2.2

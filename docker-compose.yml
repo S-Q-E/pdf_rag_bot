@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  rag-bot:
+    # Собираем образ из Dockerfile в текущей директории
+    build: .
+    # Имя контейнера для удобства
+    container_name: rag-bot-app
+    # Перезапускать контейнер в случае сбоя
+    restart: unless-stopped
+    
+    # Подключаем .env файл для переменных окружения
+    env_file:
+      - .env
+      
+    # Пробрасываем тома для сохранения данных между перезапусками
+    volumes:
+      # Папка с PDF-файлами и индексом FAISS
+      - ./data:/app/data
